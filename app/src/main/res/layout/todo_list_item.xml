@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/todoListItem"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:layout_marginBottom="1dp"
+    android:background="#fff"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/todoInitial"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:textAllCaps="true"
+        android:background="@drawable/initial_bg"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="r"
+        android:textColor="#fff" />
+
+    <TextView
+        android:id="@+id/todoTitle"
+        android:layout_width="match_parent"
+        android:textColor="@color/textPrimary"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_toRightOf="@+id/todoInitial"
+        android:text="Title"
+        android:layout_marginStart="16dp"
+        android:layout_toEndOf="@+id/todoInitial" />
+
+
+    <TextView
+        android:id="@+id/todoDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/textSecondary"
+        android:layout_marginLeft="16dp"
+        android:textSize="11sp"
+        android:layout_toRightOf="@+id/todoInitial"
+        android:layout_alignParentBottom="true"
+        android:text="11-05-2020 08:05pm"
+        android:layout_marginStart="16dp"
+        android:layout_toEndOf="@+id/todoInitial" />
+
+
+</RelativeLayout>
